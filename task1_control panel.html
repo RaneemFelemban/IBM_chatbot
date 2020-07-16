@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>CONTROL PANEL</title>
+<style>
+/*.container { 
+  height: 500px;
+  position: relative;
+ 
+  background-image: url(1494730442_blue_sky_pixel_animation.jpg;
+  background-position:  center, left bottom;
+  background-repeat: no-repeat, repeat;
+  padding: 100px;
+}*/
+
+html {  background-image: url(1216317.png);
+ 
+  background-repeat: no-repeat, repeat;
+  padding: 100px;
+  
+  background-size: cover;}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+.button {
+ display: inline-block;
+  padding: 19px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 5px  9px #999;
+    margin: 10px 5px;
+	width: 150px;
+  font-family: "Lucida Console";
+font-style: oblique;
+  
+
+ 
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 10px 5px #666;
+  transform: translateY(4px);
+}
+
+.stopb {
+   display: inline-block;
+  padding: 19px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #e6001a;
+  border: none;
+  border-radius: 50px;
+  box-shadow:  2px  9px  #999;
+    margin: 10px 3px;
+	
+font-family: "Lucida Console";
+font-style: oblique;
+ 
+}
+
+.stopb:hover {background-color:#f2000d;}
+
+.stopb:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+h2{text-align: center ; 
+color:white;
+font-family: "Lucida Console";
+font-style: oblique;}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="container">
+<h2 > Control Panel</h2>
+  <div class="center">
+  
+  <form action="control-panel.php" method="post">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="submit" class="button button1" name="forword" value="FORWORD"><br> <!-- forword button -->
+    <input type="submit" class="button button1 "name="left" value="LEFT" ><!-- left button -->
+	<input type ="submit" class="stopb" name="stop" value="STOP"> <!-- stop button -->
+	<input type="submit" class="button button1" name="right" value="RIGHT"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	&nbsp;&nbsp;&nbsp;<!-- right button -->
+	<input type="submit" class="button button1" name="backword" value="BACKWORD"> <br> <!-- backword button -->
+	</form>
+  </div>
+</div>
+
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "07d47ea7-a6dc-441b-8cbb-0cf7c3e08537", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "c16b501f-eb94-43fa-900b-c089d5223eba", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
